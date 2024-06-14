@@ -24,7 +24,11 @@ if [[ -z "\$HISTFILE_OLD" ]]; then
     export HISTFILE_OLD=\$HISTFILE
 fi
 export HISTFILE=/dc/shellhistory/.bash_history
-export PROMPT_COMMAND='history -a'
+if [ -z "\$PROMPT_COMMAND" ]; then
+    export PROMPT_COMMAND='history -a'
+else
+    export PROMPT_COMMAND="\$PROMPT_COMMAND; history -a"
+fi
 sudo chown -R $_REMOTE_USER /dc/shellhistory
 EOF
 chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.bashrc
@@ -32,7 +36,11 @@ chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.bashrc
 # Set HISTFILE for zsh
 cat << EOF >> "$_REMOTE_USER_HOME/.zshrc"
 export HISTFILE=/dc/shellhistory/.zsh_history
-export PROMPT_COMMAND='history -a'
+if [ -z "\$PROMPT_COMMAND" ]; then
+    export PROMPT_COMMAND='history -a'
+else
+    export PROMPT_COMMAND="\$PROMPT_COMMAND; history -a"
+fi
 sudo chown -R $_REMOTE_USER /dc/shellhistory
 EOF
 chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.zshrc
