@@ -7,7 +7,7 @@ Preserve shell history across dev container instances. Currently supports bash, 
 
 ```json
 "features": {
-    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+    "ghcr.io/dmytrokyrychuk/dev-container-features/shell-history:0": {}
 }
 ```
 
@@ -28,4 +28,4 @@ Preserve shell history across dev container instances. Currently supports bash, 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/stuartleeks/dev-container-features/blob/main/src/shell-history/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dmytrokyrychuk/dev-container-features/blob/main/src/shell-history/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
