@@ -7,7 +7,7 @@ Preserve ~/.azure folder across container instances (avoids needing to login aft
 
 ```json
 "features": {
-    "ghcr.io/stuartleeks/dev-container-features/azure-cli-persistence:0": {}
+    "ghcr.io/dmytrokyrychuk/dev-container-features/azure-cli-persistence:0": {}
 }
 ```
 
@@ -28,4 +28,4 @@ Preserve ~/.azure folder across container instances (avoids needing to login aft
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/stuartleeks/dev-container-features/blob/main/src/azure-cli-persistence/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dmytrokyrychuk/dev-container-features/blob/main/src/azure-cli-persistence/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
